@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Comme&display=swap');
+
+html,
+    body{
+        font-family: 'Comme', sans-serif;
+        background-image: linear-gradient(to left, rgb(110, 230, 110), rgb(80, 200, 255));
+        color: white;
+        overflow: visible;
+        height: 100vh;
+    }
+
+    .menu {
+        background-image: linear-gradient(to left, rgb(110, 230, 110), rgb(80, 200, 255));
+      }
+      
+      .menu ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        font-size: large;
+        background-color: #333;
+      }
+      
+      .menu li {
+        margin: 18px;
+        font-family: 'Comme', sans-serif;
+      }
+      
+      .menu li a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        color: #ffffff;
+        font-family: 'Comme', sans-serif;
+        font-size: large;
+      }
+      
+      .menu li.active a {
+        color: #ffffff;
+        font-family: 'Comme', sans-serif;
+      }
+      
+
+    .inssimg img{
+        display: flex;
+        height: 26vh; 
+      }
+    
+    .começo{
+        text-align: center;
+    }
+
+    
+    

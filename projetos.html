@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="shortcut icon" href="./maleta-removebg-preview.png" type="image/x-icon">
+<title>Projetos - SECAP</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #ffffff;
+    color: #333;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  .project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .project-card {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .project-card h2 {
+    margin-top: 0;
+    font-size: 24px;
+  }
+
+  .project-card p {
+    color: #777;
+  }
+
+  .project-card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .project-card a:hover {
+    background-color: #45a049;
+  }
+
+  /* Botão de inversão de tema */
+  .theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #ffffff;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  /* Estilos para o tema escuro */
+  .dark-theme {
+    background-color: #000000;
+    color: #ffffff;
+  }
+
+  .dark-theme h1 {
+    color: #ffffff;
+  }
+
+  .dark-theme .project-card {
+    background-color: #252525;
+    color: #ffffff;
+  }
+
+  .dark-theme .project-card a {
+    background-color: #2196F3;
+  }
+</style>
+</head>
+<body>
+<h1>Projetos - SECAP</h1>
+
+<button class="theme-toggle" onclick="toggleTheme()">Inverter tema</button>
+
+<div class="project-container">
+  <div class="project-card">
+    <h2>Trilha De Cursos</h2>
+    <p>O Projeto Trata-se De Uma Trilha De Cursos Destinada Aos Novos Estagiários Da SECAP.</p>
+    <a href="./proj1.html">Ver detalhes</a>
+    <a href="https://trilhainss.netlify.app/">Acesse O Site</a>
+
+  </div>
+
+  <div class="project-card">
+    <h2>Contratações Eficientes</h2>
+    <p>Desenvolvimento de uma nova forma de contratar estagiários SECAP.
+      Com tal forma eficiente, podemos bater recordes de velocidades em contratações.
+    </p>
+    <a href="./proj2.html">Ver detalhes</a>
+  </div>
+
+  <div class="project-card">
+    <h2>Semana Do Estagiário</h2>
+    <p>A "Semana do Estagiário" é um programa concentrado de uma semana que une workshops, networking e mentoria para aprimorar habilidades e integrar estagiários à cultura da empresa, impulsionando seu crescimento profissional e contribuindo para o fortalecimento organizacional.</p>
+    <a href="https://escola.inss.gov.br/course/view.php?id=318">Acesse O Site</a>
+  </div>
+  
+<script>
+  // Função para inverter entre os modos de luz (claro) e escuro
+  function toggleTheme() {
+    const body = document.body;
+    const themeToggle = document.querySelector('.theme-toggle');
+
+    if (body.classList.contains('dark-theme')) {
+      body.classList.remove('dark-theme');
+      themeToggle.innerText = 'Inverter tema';
+    } else {
+      body.classList.add('dark-theme');
+      themeToggle.innerText = 'Inverter tema';
+    }
+  }
+</script>
+</body>
+</html>
